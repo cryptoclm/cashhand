@@ -1,0 +1,4 @@
+qt/qt_libbitcoinqt_a-qrc_cashhand.o: qt/qrc_cashhand.cpp \
+ /usr/include/stdc-predef.h
+
+/usr/include/stdc-predef.h:

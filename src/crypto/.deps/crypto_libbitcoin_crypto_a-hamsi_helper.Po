@@ -1,0 +1,4 @@
+crypto/crypto_libbitcoin_crypto_a-hamsi_helper.o: crypto/hamsi_helper.c \
+ /usr/include/stdc-predef.h
+
+/usr/include/stdc-predef.h:

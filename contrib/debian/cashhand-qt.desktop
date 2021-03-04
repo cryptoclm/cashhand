@@ -1,0 +1,12 @@
+[Desktop Entry]
+Version=1.0
+Name=cashhand Core
+Comment=cashhand P2P Cryptocurrency
+Exec=cashhand-qt %u
+Terminal=false
+Type=Application
+Icon=cashhand128
+MimeType=x-scheme-handler/cashhand;
+Categories=Office;Finance;
+StartupWMClass=cashhand-qt
+Name[en_US]=cashhand-qt.desktop

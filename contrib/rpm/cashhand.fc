@@ -1,0 +1,8 @@
+/usr/bin/cashhand-cli		--	gen_context(system_u:object_r:cashhand_exec_t,s0)
+/usr/sbin/cashhandd		--	gen_context(system_u:object_r:cashhand_exec_t,s0)
+/usr/lib(64)?/cashhand/cashhandd		--	gen_context(system_u:object_r:cashhand_exec_t,s0)
+
+/etc/cashhand(/.*)?		gen_context(system_u:object_r:cashhand_conf_t,s0)
+/var/lib/cashhand(/.*)?		gen_context(system_u:object_r:cashhand_var_lib_t,s0)
+
+(/var)?/run/cashhandd(/.*)?   gen_context(system_u:object_r:cashhand_var_run_t,s0)

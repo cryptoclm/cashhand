@@ -1,0 +1,4 @@
+crypto/crypto_libbitcoin_crypto_a-haval_helper.o: crypto/haval_helper.c \
+ /usr/include/stdc-predef.h
+
+/usr/include/stdc-predef.h:
