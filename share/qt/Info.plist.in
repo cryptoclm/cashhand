@@ -29,16 +29,16 @@
   <string>????</string>
 
   <key>CFBundleExecutable</key>
-  <string>CashHandv2-Qt</string>
+  <string>CashHandv22-Qt</string>
 
   <key>CFBundleName</key>
-  <string>CashHandv2-Qt</string>
+  <string>CashHandv22-Qt</string>
 
   <key>LSHasLocalizedDisplayName</key>
   <true/>
 
   <key>CFBundleIdentifier</key>
-  <string>io.cashhand2.CashHandv2-Qt</string>
+  <string>io.cashhand22.CashHandv22-Qt</string>
 
   <key>CFBundleURLTypes</key>
   <array>
@@ -46,7 +46,7 @@
       <key>CFBundleTypeRole</key>
       <string>Editor</string>
       <key>CFBundleURLName</key>
-      <string>io.cashhand2.CashHandPayment</string>
+      <string>io.cashhand22.CashHandPayment</string>
       <key>CFBundleURLSchemes</key>
       <array>
         <string>cashhand</string>
@@ -58,7 +58,7 @@
   <array>
     <dict>
       <key>UTTypeIdentifier</key>
-      <string>io.cashhandv2.paymentrequest</string>
+      <string>io.cashhandv22.paymentrequest</string>
       <key>UTTypeDescription</key>
       <string>CashHand payment request</string>
       <key>UTTypeConformsTo</key>
@@ -84,7 +84,7 @@
       <string>Editor</string>
       <key>LSItemContentTypes</key>
       <array>
-        <string>io.cashhandv2.paymentrequest</string>
+        <string>io.cashhandv22.paymentrequest</string>
       </array>
       <key>LSHandlerRank</key>
       <string>Owner</string>
