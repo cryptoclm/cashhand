@@ -6417,8 +6417,8 @@ PIVX Core Wallet</source>
         <translation>Вы должны указать в  строке приложенный ключ. Пожалуйста, обратитесь к документации для получения справки</translation>
     </message>
     <message>
-        <source>(17240 could be used only on mainnet)</source>
-        <translation>(17240 можно использовать только в сети)</translation>
+        <source>(17520 could be used only on mainnet)</source>
+        <translation>(17520 можно использовать только в сети)</translation>
     </message>
     <message>
         <source>(default: %s)</source>
@@ -6429,8 +6429,8 @@ PIVX Core Wallet</source>
         <translation>(неуплата: 1)</translation>
     </message>
     <message>
-        <source>(must be 17240 for mainnet)</source>
-        <translation>(должен быть 17240 для mainet)</translation>
+        <source>(must be 17520 for mainnet)</source>
+        <translation>(должен быть 17520 для mainet)</translation>
     </message>
     <message>
         <source>Accept command line and JSON-RPC commands</source>

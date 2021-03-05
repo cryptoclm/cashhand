@@ -6488,8 +6488,8 @@ Hoşgeldiniz</translation>
         <translation>Konfigürasyonda bir masternodeprivkey belirlemelisiniz.  Lütfen dokümantasyona bakınız.</translation>
     </message>
     <message>
-        <source>(17240 could be used only on mainnet)</source>
-        <translation>(17240 sadece mainnet üzerinde kullanılabilir)</translation>
+        <source>(17520 could be used only on mainnet)</source>
+        <translation>(17520 sadece mainnet üzerinde kullanılabilir)</translation>
     </message>
     <message>
         <source>(default: %s)</source>
@@ -6500,8 +6500,8 @@ Hoşgeldiniz</translation>
         <translation>(default: 1)</translation>
     </message>
     <message>
-        <source>(must be 17240 for mainnet)</source>
-        <translation>(mainnet için 17240 olmalıdır)</translation>
+        <source>(must be 17520 for mainnet)</source>
+        <translation>(mainnet için 17520 olmalıdır)</translation>
     </message>
     <message>
         <source>Accept command line and JSON-RPC commands</source>

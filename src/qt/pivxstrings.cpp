@@ -256,10 +256,10 @@ QT_TRANSLATE_NOOP("pivx-core", ""
 QT_TRANSLATE_NOOP("pivx-core", ""
 "You must specify a masternodeprivkey in the configuration. Please see "
 "documentation for help."),
-QT_TRANSLATE_NOOP("pivx-core", "(17240 could be used only on mainnet)"),
+QT_TRANSLATE_NOOP("pivx-core", "(17520 could be used only on mainnet)"),
 QT_TRANSLATE_NOOP("pivx-core", "(default: %s)"),
 QT_TRANSLATE_NOOP("pivx-core", "(default: 1)"),
-QT_TRANSLATE_NOOP("pivx-core", "(must be 17240 for mainnet)"),
+QT_TRANSLATE_NOOP("pivx-core", "(must be 17520 for mainnet)"),
 QT_TRANSLATE_NOOP("pivx-core", "<category> can be:"),
 QT_TRANSLATE_NOOP("pivx-core", "Accept command line and JSON-RPC commands"),
 QT_TRANSLATE_NOOP("pivx-core", "Accept connections from outside (default: 1 if no -proxy or -connect)"),

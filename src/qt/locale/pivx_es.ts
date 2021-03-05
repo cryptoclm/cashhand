@@ -6423,8 +6423,8 @@ PIVX Core Wallet</translation>
         <translation>Debes especificar un masternodeprivkey en la configuración. Por favor mira la documentación por ayuda.</translation>
     </message>
     <message>
-        <source>(17240 could be used only on mainnet)</source>
-        <translation>(17240 puede ser utilizado solo en mainnet)</translation>
+        <source>(17520 could be used only on mainnet)</source>
+        <translation>(17520 puede ser utilizado solo en mainnet)</translation>
     </message>
     <message>
         <source>(default: %s)</source>
@@ -6435,8 +6435,8 @@ PIVX Core Wallet</translation>
         <translation>(predeterminado: 1)</translation>
     </message>
     <message>
-        <source>(must be 17240 for mainnet)</source>
-        <translation>(debe ser 17240 para un mainnet)</translation>
+        <source>(must be 17520 for mainnet)</source>
+        <translation>(debe ser 17520 para un mainnet)</translation>
     </message>
     <message>
         <source>Accept command line and JSON-RPC commands</source>

@@ -63,7 +63,7 @@ static CBlock CreateGenesisBlock(const char* pszTimestamp, const CScript& genesi
 static CBlock CreateGenesisBlock(uint32_t nTime, uint32_t nNonce, uint32_t nBits, int32_t nVersion, const CAmount& genesisReward)
 {
     const char* pszTimestamp = "Cashhand is an innovation to the crypto world.";
-    const CScript genesisOutputScript = CScript() << ParseHex("04f2684285cbeed0e530730bb430a86a04fe85035b2f1778ae29b8b8c9e7107980fbf2cd1e20c832b59e36a89ce4eea2040782bd5312ebd24743b91d4a5fec3f02") << OP_CHECKSIG;
+    const CScript genesisOutputScript = CScript() << ParseHex("048863637ea01941c77cc8c5b160607f552d7f53b6c402e46d8a34a26a88f52145f83f1723541984310cd9f79b94eff5cc0377752be206193614098b59344807ac") << OP_CHECKSIG;
     return CreateGenesisBlock(pszTimestamp, genesisOutputScript, nTime, nNonce, nBits, nVersion, genesisReward);
 }
 
@@ -94,10 +94,10 @@ static void convertSeed6(std::vector<CAddress>& vSeedsOut, const SeedSpec6* data
 //    timestamp before)
 // + Contains no strange transactions
 static Checkpoints::MapCheckpoints mapCheckpoints =
-    boost::assign::map_list_of(0, uint256("1e34925c6f94d0be32da37488ed983c8083f12540f744801a03b2128ba9b697c"));
+    boost::assign::map_list_of(0, uint256("0xf64677c3f8bfff3e82b0d7e79605bf7f2a2fabd4bce4d356759057591dafa8c0"));
 static const Checkpoints::CCheckpointData data = {
     &mapCheckpoints,
-    1614319200, // * UNIX timestamp of last checkpoint block
+    1614902400, // * UNIX timestamp of last checkpoint block
     1923952,    // * total number of transactions between genesis and last checkpoint
                 //   (the tx=... number in the SetBestChain debug.log lines)
     2939        // * estimated number of transactions per day after checkpoint
@@ -128,10 +128,10 @@ public:
         networkID = CBaseChainParams::MAIN;
         strNetworkID = "main";
 
-        genesis = CreateGenesisBlock(1614319200, 1306850, 0x1e0ffff0, 1, 0 * COIN);
+        genesis = CreateGenesisBlock(1614902400, 1306820, 0x1e0ffff0, 1, 0 * COIN);
         consensus.hashGenesisBlock = genesis.GetHash();
-        assert(consensus.hashGenesisBlock == uint256("1e34925c6f94d0be32da37488ed983c8083f12540f744801a03b2128ba9b697c"));
-        assert(genesis.hashMerkleRoot == uint256("c8cfe5df1be3bb27ce2f2a471a73b64b522e28f8161e1a993b52d6f4844f4229"));
+        assert(consensus.hashGenesisBlock == uint256("0xf64677c3f8bfff3e82b0d7e79605bf7f2a2fabd4bce4d356759057591dafa8c0"));
+        assert(genesis.hashMerkleRoot == uint256("0x175766ef9bb0c6633763b450140cee8496fd33d76a42ba7c8e41531c52172e7c"));
 
         consensus.fPowAllowMinDifficultyBlocks = false;
         consensus.powLimit   = ~UINT256_ZERO >> 20;   // CASHHAND starting difficulty is 1 / 2^12
@@ -152,10 +152,10 @@ public:
         consensus.nTargetTimespanV2 = 1 * 60;
         consensus.nTargetSpacing = 1 * 60;
         consensus.nTimeSlotLength = 15;
-        consensus.strObfuscationPoolDummyAddress = "CQ4fj33mJBaxMWcxjAz9GP8pJ7vZfQRxju";
+        consensus.strObfuscationPoolDummyAddress = "cQ4fj33mJBaxMWcxjAz9GP8pJ7vZfQRxju";
 
         // spork keys
-        consensus.strSporkPubKey = "04b0f073e23b6b644962d1b5a333f36008dfa92ee01024cc3ebcb3b4fbd1453dfaab626f43901354734d25fe387fb2a477eda337be40b19144764f016fad621051";
+        consensus.strSporkPubKey = "04e1bac5288740967c2298dd8e6c09cd0b0c46bf9bc7144fbf85ba3e292f969058f69206798de37af746ce60765be4dac607ade03ceea0d019f646f369b89f81b4";
 
         // height-based activations
         consensus.height_last_PoW = 250;
@@ -178,7 +178,7 @@ public:
         consensus.ZC_MinMintConfirmations = 20;
         consensus.ZC_MinMintFee = 1 * CENT;
         consensus.ZC_MinStakeDepth = 200;
-	consensus.ZC_TimeStart = 1547096400;        // October 17, 2017 4:30:00 AM
+	    consensus.ZC_TimeStart = 1547096400;        // October 17, 2017 4:30:00 AM
 
         /**
          * The message start string is designed to be unlikely to occur in normal data.
@@ -190,7 +190,7 @@ public:
         pchMessageStart[1] = 0xca;
         pchMessageStart[2] = 0xc2;
         pchMessageStart[3] = 0x32;
-        nDefaultPort = 17240;
+        nDefaultPort = 17520;
 
         // Note that of those with the service bits flag, most only support a subset of possible options
         vSeeds.push_back(CDNSSeedData("node11", "node11.cashhand.info"));
@@ -236,9 +236,9 @@ public:
         networkID = CBaseChainParams::TESTNET;
         strNetworkID = "test";
 
-        genesis = CreateGenesisBlock(1614319200, 1306850, 0x1e0ffff0, 1, 0 * COIN);
+        genesis = CreateGenesisBlock(1614902400, 1306820, 0x1e0ffff0, 1, 0 * COIN);
         consensus.hashGenesisBlock = genesis.GetHash();
-        assert(consensus.hashGenesisBlock == uint256("1e34925c6f94d0be32da37488ed983c8083f12540f744801a03b2128ba9b697c"));
+        assert(consensus.hashGenesisBlock == uint256("0xf64677c3f8bfff3e82b0d7e79605bf7f2a2fabd4bce4d356759057591dafa8c0"));
 
         consensus.fPowAllowMinDifficultyBlocks = true;
         consensus.powLimit   = ~UINT256_ZERO >> 20;   // CASHHAND starting difficulty is 1 / 2^12
@@ -262,7 +262,7 @@ public:
         consensus.strObfuscationPoolDummyAddress = "CQ4fj33mJBaxMWcxjAz9GP8pJ7vZfQRxju";
 
         // spork keys
-        consensus.strSporkPubKey = "04b0f073e23b6b644962d1b5a333f36008dfa92ee01024cc3ebcb3b4fbd1453dfaab626f43901354734d25fe387fb2a477eda337be40b19144764f016fad621051";
+        consensus.strSporkPubKey = "04e1bac5288740967c2298dd8e6c09cd0b0c46bf9bc7144fbf85ba3e292f969058f69206798de37af746ce60765be4dac607ade03ceea0d019f646f369b89f81b4";
 
         // height based activations
         consensus.height_last_PoW = 200;
@@ -369,7 +369,7 @@ public:
         private key hex: bd4960dcbd9e7f2223f24e7164ecb6f1fe96fc3a416f5d3a830ba5720c84b8ca
         Address: yCvUVd72w7xpimf981m114FSFbmAmne7j9
         */
-        consensus.strSporkPubKey = "043969b1b0e6f327de37f297a015d37e2235eaaeeb3933deecd8162c075cee0207b13537618bde640879606001a8136091c62ec272dd0133424a178704e6e75bb7";
+        consensus.strSporkPubKey = "04e1bac5288740967c2298dd8e6c09cd0b0c46bf9bc7144fbf85ba3e292f969058f69206798de37af746ce60765be4dac607ade03ceea0d019f646f369b89f81b4";
 
         // height based activations
         consensus.height_last_PoW = 250;

@@ -6450,8 +6450,8 @@ PIVX核心钱包</translation>
         <translation>您必须在配置中指定一个主节点privkey。有关帮助，请参阅文档。</translation>
     </message>
     <message>
-        <source>(17240 could be used only on mainnet)</source>
-        <translation>(17240只可在网上使用)</translation>
+        <source>(17520 could be used only on mainnet)</source>
+        <translation>(17520只可在网上使用)</translation>
     </message>
     <message>
         <source>(default: %s)</source>
@@ -6462,8 +6462,8 @@ PIVX核心钱包</translation>
         <translation>(默认: 1)</translation>
     </message>
     <message>
-        <source>(must be 17240 for mainnet)</source>
-        <translation>(主网必须为17240)</translation>
+        <source>(must be 17520 for mainnet)</source>
+        <translation>(主网必须为17520)</translation>
     </message>
     <message>
         <source>Accept command line and JSON-RPC commands</source>

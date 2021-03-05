@@ -6493,8 +6493,8 @@ PIVX Core Portemonnee</translation>
         <translation>Je moet een masternodeprivkey opgeven in de configuratie. Raadpleeg de documentatie voor hulp.</translation>
     </message>
     <message>
-        <source>(17240 could be used only on mainnet)</source>
-        <translation>(17240 kan alleen op mainnet worden gebruikt)</translation>
+        <source>(17520 could be used only on mainnet)</source>
+        <translation>(17520 kan alleen op mainnet worden gebruikt)</translation>
     </message>
     <message>
         <source>(default: %s)</source>
@@ -6505,8 +6505,8 @@ PIVX Core Portemonnee</translation>
         <translation>(standaard: 1)</translation>
     </message>
     <message>
-        <source>(must be 17240 for mainnet)</source>
-        <translation>(moet 17240 voor mainnet zijn)</translation>
+        <source>(must be 17520 for mainnet)</source>
+        <translation>(moet 17520 voor mainnet zijn)</translation>
     </message>
     <message>
         <source>Accept command line and JSON-RPC commands</source>

@@ -6495,8 +6495,8 @@ Portafoglio PIVX Core.</translation>
         <translation>È necessario specificare una chiave masternodepriv nella configurazione. Consultare la documentazione per assistenza.</translation>
     </message>
     <message>
-        <source>(17240 could be used only on mainnet)</source>
-        <translation>(17240 potrebbe essere utilizzato solo su mainnet)</translation>
+        <source>(17520 could be used only on mainnet)</source>
+        <translation>(17520 potrebbe essere utilizzato solo su mainnet)</translation>
     </message>
     <message>
         <source>(default: %s)</source>
@@ -6507,8 +6507,8 @@ Portafoglio PIVX Core.</translation>
         <translation>(default: 1)</translation>
     </message>
     <message>
-        <source>(must be 17240 for mainnet)</source>
-        <translation>(deve essere 17240 per mainnet)</translation>
+        <source>(must be 17520 for mainnet)</source>
+        <translation>(deve essere 17520 per mainnet)</translation>
     </message>
     <message>
         <source>Accept command line and JSON-RPC commands</source>

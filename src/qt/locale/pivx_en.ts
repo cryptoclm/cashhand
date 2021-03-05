@@ -8018,8 +8018,8 @@ PIVX Core Wallet</source>
     </message>
     <message>
         <location line="+3"/>
-        <source>(17240 could be used only on mainnet)</source>
-        <translation type="unfinished">(17240 could be used only on mainnet)</translation>
+        <source>(17520 could be used only on mainnet)</source>
+        <translation type="unfinished">(17520 could be used only on mainnet)</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -8033,7 +8033,7 @@ PIVX Core Wallet</source>
     </message>
     <message>
         <location line="+1"/>
-        <source>(must be 17240 for mainnet)</source>
+        <source>(must be 17520 for mainnet)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>

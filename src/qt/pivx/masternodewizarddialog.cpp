@@ -65,7 +65,7 @@ MasterNodeWizardDialog::MasterNodeWizardDialog(WalletModel *model, QWidget *pare
     setCssSubtitleScreen(ui->labelSubtitleAddressIp);
 
     ui->lineEditIpAddress->setPlaceholderText("e.g 18.255.255.255");
-    ui->lineEditPort->setPlaceholderText("e.g 17240");
+    ui->lineEditPort->setPlaceholderText("e.g 17520");
     initCssEditLine(ui->lineEditIpAddress);
     initCssEditLine(ui->lineEditPort);
     ui->stackedWidget->setCurrentIndex(pos);
@@ -75,7 +75,7 @@ MasterNodeWizardDialog::MasterNodeWizardDialog(WalletModel *model, QWidget *pare
     } else if (walletModel->isTestNetwork()) {
         ui->lineEditPort->setText("51474");
     } else {
-        ui->lineEditPort->setText("17240");
+        ui->lineEditPort->setText("17520");
     }
 
     // Confirm icons

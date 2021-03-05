@@ -6258,8 +6258,8 @@ Portefeuille PIVX Core</translation>
         <translation>Vous devez spécifier une masternodeprivkey dans la configuration. Veuillez consulter la documentation pour obtenir de l'aide.</translation>
     </message>
     <message>
-        <source>(17240 could be used only on mainnet)</source>
-        <translation>(17240 ne peut être utilisé que pour le mainnet)</translation>
+        <source>(17520 could be used only on mainnet)</source>
+        <translation>(17520 ne peut être utilisé que pour le mainnet)</translation>
     </message>
     <message>
         <source>(default: %s)</source>
@@ -6270,8 +6270,8 @@ Portefeuille PIVX Core</translation>
         <translation>(default: 1)</translation>
     </message>
     <message>
-        <source>(must be 17240 for mainnet)</source>
-        <translation>(doit être 17240 pour le mainnet)</translation>
+        <source>(must be 17520 for mainnet)</source>
+        <translation>(doit être 17520 pour le mainnet)</translation>
     </message>
     <message>
         <source>Accept command line and JSON-RPC commands</source>
