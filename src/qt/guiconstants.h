@@ -48,9 +48,9 @@ static const int MAX_URI_LENGTH = 255;
 /* QRCodeDialog -- size of exported QR Code image */
 #define EXPORT_IMAGE_SIZE 256
 
-#define QAPP_ORG_NAME "CashHandv2"
-#define QAPP_ORG_DOMAIN "cashhandv2.io"
-#define QAPP_APP_NAME_DEFAULT "CashHandv2-Qt"
-#define QAPP_APP_NAME_TESTNET "CashHandv2-Qt-testnet"
+#define QAPP_ORG_NAME "CashHandv22"
+#define QAPP_ORG_DOMAIN "cashhandv22.io"
+#define QAPP_APP_NAME_DEFAULT "CashHandv22-Qt"
+#define QAPP_APP_NAME_TESTNET "CashHandv22-Qt-testnet"
 
 #endif // BITCOIN_QT_GUICONSTANTS_H
