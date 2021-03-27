@@ -5000,18 +5000,11 @@ bool static ProcessMessage(CNode* pfrom, std::string strCommand, CDataStream& vR
         }
 
 	// disconnect from peers older than this version
-	version_old = "< 2.1.0.0";
-        if (pfrom->cleanSubVer == "/Cashhand Core:2.0.0/" || pfrom->cleanSubVer == "/Cashhand Core:1.1.1.1/" || pfrom->cleanSubVer == "/Cashhand Core:1.0.1.1/" || pfrom->cleanSubVer == "/Cashhand Core:1.0.0/")
+	version_old = "< 2.2.1.0";
+        if (pfrom->cleanSubVer == "/Cashhand Core:2.2.0/" || pfrom->cleanSubVer == "/Cashhand Core:2.1.0/" || pfrom->cleanSubVer == "/Cashhand Core:2.0.0/" || pfrom->cleanSubVer == "/Cashhand Core:1.1.1.1/" || pfrom->cleanSubVer == "/Cashhand Core:1.0.1.1/" || pfrom->cleanSubVer == "/Cashhand Core:1.0.0/")
         {
             LogPrintf("peer=%d using obsolete version %s disconnecting\n", pfrom->id, pfrom->cleanSubVer);
             pfrom->PushMessage("reject", strCommand, REJECT_OBSOLETE, strprintf("Version must be %s or greater", version_old));
-            pfrom->fDisconnect = true;
-            return false;
-        }
-
-        if ((pfrom->cleanSubVer == "/Cashhand Core:2.0.0.1/" || pfrom->cleanSubVer == "/Cashhand Core:2.0.0.2/") && pfrom->nStartingHeight > 56000 ){ //1600 blocks 1600 blocks BEFORE halving
-            LogPrintf("Halving - peer=%d using obsolete version %s disconnecting\n", pfrom->id, pfrom->cleanSubVer);
-            pfrom->PushMessage("reject", strCommand, REJECT_OBSOLETE, strprintf("Halving - Version must be %s or greater", version_old));
             pfrom->fDisconnect = true;
             return false;
         }
