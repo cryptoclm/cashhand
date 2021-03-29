@@ -1583,16 +1583,16 @@ int64_t GetBlockValue(int nHeight)
         nSubsidy = 1 * COIN;
     } else if (nHeight >= Params().GetConsensus().height_last_PoW && nHeight < 131400) { 
          nSubsidy = 5 * COIN;   // Total supply = 837,249 CHND
-    } else if (nHeight >= 131400 && nHeight < 262800) { 
+    } else if (nHeight >= 131400 && nHeight < 394200) { 
          nSubsidy = 2.5 * COIN;
-    } else if (nHeight >= 262800 && nHeight < 394200) { 
-         nSubsidy = 2 * COIN;
     } else if (nHeight >= 394200 && nHeight < 525600) { 
-         nSubsidy = 1 * COIN;
-    } else if (nHeight >= 525600 && nHeight < 1051200) { 
-         nSubsidy = 0.5 * COIN;
-    } else if (nHeight >= 1051200) { 
-         nSubsidy = 0.4 * COIN;
+         nSubsidy = 2 * COIN;
+    } else if (nHeight >= 525600 && nHeight < 1051200) {
+        nSubsidy = 1 * COIN;
+    } else if (nHeight >= 1051200 && nHeight < 2102400) {
+        nSubsidy = 0.5 * COIN;
+    } else if (nHeight >= 2102400) {
+        nSubsidy = 0.4 * COIN;
     }
 
 
@@ -5000,9 +5000,8 @@ bool static ProcessMessage(CNode* pfrom, std::string strCommand, CDataStream& vR
         }
 
 	// disconnect from peers older than this version
-	version_old = "< 2.2.1.0";
-        if (pfrom->cleanSubVer == "/Cashhand Core:2.2.0/" || pfrom->cleanSubVer == "/Cashhand Core:2.1.0/" || pfrom->cleanSubVer == "/Cashhand Core:2.0.0/" || pfrom->cleanSubVer == "/Cashhand Core:1.1.1.1/" || pfrom->cleanSubVer == "/Cashhand Core:1.0.1.1/" || pfrom->cleanSubVer == "/Cashhand Core:1.0.0/")
-        {
+	version_old = "< 2.3.0";
+        if (pfrom->cleanSubVer == "/Cashhand Core:2.2.1/" || pfrom->cleanSubVer == "/Cashhand Core:2.2.0/" || pfrom->cleanSubVer == "/Cashhand Core:2.1.0/" || pfrom->cleanSubVer == "/Cashhand Core:2.0.0/") {
             LogPrintf("peer=%d using obsolete version %s disconnecting\n", pfrom->id, pfrom->cleanSubVer);
             pfrom->PushMessage("reject", strCommand, REJECT_OBSOLETE, strprintf("Version must be %s or greater", version_old));
             pfrom->fDisconnect = true;

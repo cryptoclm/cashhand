@@ -1,5 +1,5 @@
 ---
-name: "cashhand-win-2.2.1"
+name: "cashhand-win-2.3.0"
 enable_cache: true
 distro: "ubuntu"
 suites:

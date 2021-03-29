@@ -34,7 +34,7 @@ unsigned int static DarkGravityWave(const CBlockIndex* pindexLast)
 	return consensus.powLimit.GetCompact();
     }
 
-    if (BlockLastSolved->nHeight <= 18000) { // reset diff
+    if (BlockLastSolved->nHeight <= 18500) { // reset diff
         return consensus.powLimit.GetCompact();
     }
 
@@ -116,7 +116,7 @@ unsigned int static DarkGravityWave(const CBlockIndex* pindexLast)
 unsigned int GetNextWorkRequired(const CBlockIndex* pindexLast, const CBlockHeader* pblock)
 {
 	const CBlockIndex* BlockLast = pindexLast;
-	if (BlockLast->nHeight <= 18000){ // DarkGravityWave PoW switch
+	if (BlockLast->nHeight <= 18500){ // DarkGravityWave PoW switch
 	        return GetNextWorkRequired_old(pindexLast, pblock);
 	} else {
 		return DarkGravityWave(pindexLast);
