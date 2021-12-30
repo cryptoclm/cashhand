@@ -161,6 +161,7 @@ public:
         consensus.nTargetSpacing = 1 * 60;
         consensus.nTimeSlotLength = 15;
         consensus.strObfuscationPoolDummyAddress = "cQ4fj33mJBaxMWcxjAz9GP8pJ7vZfQRxju";
+	consensus.strDevFeeAddress = "zS44nzYNkZUWfV1TVVgUqJTeHqSjuPjbsi";
 
         // spork keys
         consensus.strSporkPubKey = "04e1bac5288740967c2298dd8e6c09cd0b0c46bf9bc7144fbf85ba3e292f969058f69206798de37af746ce60765be4dac607ade03ceea0d019f646f369b89f81b4";
@@ -268,6 +269,7 @@ public:
         consensus.nTargetSpacing = 1 * 60;
         consensus.nTimeSlotLength = 15;
         consensus.strObfuscationPoolDummyAddress = "CQ4fj33mJBaxMWcxjAz9GP8pJ7vZfQRxju";
+	consensus.strDevFeeAddress = "zS44nzYNkZUWfV1TVVgUqJTeHqSjuPjbsi";
 
         // spork keys
         consensus.strSporkPubKey = "04e1bac5288740967c2298dd8e6c09cd0b0c46bf9bc7144fbf85ba3e292f969058f69206798de37af746ce60765be4dac607ade03ceea0d019f646f369b89f81b4";
@@ -371,6 +373,7 @@ public:
         consensus.nTargetSpacing = 1 * 60;
         consensus.nTimeSlotLength = 15;
         consensus.strObfuscationPoolDummyAddress = "y57cqfGRkekRyDRNeJiLtYVEbvhXrNbmox";
+	consensus.strDevFeeAddress = "zS44nzYNkZUWfV1TVVgUqJTeHqSjuPjbsi";
 
         /* Spork Key for RegTest:
         WIF private key: 932HEevBSujW2ud7RfB1YF91AFygbBRQj3de3LyaCRqNzKKgWXi

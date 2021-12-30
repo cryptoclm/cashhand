@@ -1629,6 +1629,43 @@ int64_t GetMasternodePayment(int nHeight, int64_t blockValue, int nMasternodeCou
     return ret;
 }
 
+int64_t GetDevelopersPayment(int nHeight) {
+
+   int64_t ret = 0;
+   int64_t nSubsidy = 0;
+
+   if (Params().NetworkID() == CBaseChainParams::TESTNET) {
+       if (nHeight < 200 && nHeight > 0)
+           return 250000 * COIN;
+   }
+
+   if (nHeight < 1) {
+       nSubsidy = 180000 * COIN; //SWAP 180 000
+   } else if (nHeight >= 1 && nHeight < Params().GetConsensus().height_last_PoW) {
+       nSubsidy = 1 * COIN;
+   } else if (nHeight >= Params().GetConsensus().height_last_PoW && nHeight < 131400) {
+        nSubsidy = 5 * COIN;   // Total supply = 837,249 CHND
+   } else if (nHeight >= 131400 && nHeight < 394200) {
+        nSubsidy = 2.5 * COIN;
+   } else if (nHeight >= 394200 && nHeight < 525600) {
+        nSubsidy = 2 * COIN;
+   } else if (nHeight >= 525600 && nHeight < 1051200) {
+       nSubsidy = 1 * COIN;
+   } else if (nHeight >= 1051200 && nHeight < 2102400) {
+       nSubsidy = 0.5 * COIN;
+   } else if (nHeight >= 2102400) {
+       nSubsidy = 0.4 * COIN;
+   }
+
+   if (!sporkManager.IsSporkActive(SPORK_19_DEVFEE)) {
+       ret = COIN * 0;
+   } else {
+       ret = nSubsidy * 0.25;
+   }
+
+   return ret;
+
+}
 
 bool IsInitialBlockDownload()
 {
@@ -3237,6 +3274,10 @@ bool CheckColdStakeFreeOutput(const CTransaction& tx, const int nHeight)
     if (outs >=3 && lastOut.scriptPubKey != tx.vout[outs-2].scriptPubKey) {
         // last output can either be a mn reward or a budget payment
         if (lastOut.nValue == GetMasternodePayment(nHeight, GetBlockValue(nHeight), 0))
+            return true;
+
+        // last output can either be a devfund reward
+        if (lastOut.nValue == GetDevelopersPayment(nHeight))
             return true;
 
         // This could be a budget block.
