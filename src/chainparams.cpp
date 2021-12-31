@@ -161,7 +161,7 @@ public:
         consensus.nTargetSpacing = 1 * 60;
         consensus.nTimeSlotLength = 15;
         consensus.strObfuscationPoolDummyAddress = "cQ4fj33mJBaxMWcxjAz9GP8pJ7vZfQRxju";
-	consensus.strDevFeeAddress = "zS44nzYNkZUWfV1TVVgUqJTeHqSjuPjbsi";
+	consensus.strDevFeeAddress = "cFQNiYVWvzD3KTvbihMQyHukR24kPZBgAh";
 
         // spork keys
         consensus.strSporkPubKey = "04e1bac5288740967c2298dd8e6c09cd0b0c46bf9bc7144fbf85ba3e292f969058f69206798de37af746ce60765be4dac607ade03ceea0d019f646f369b89f81b4";
@@ -269,10 +269,10 @@ public:
         consensus.nTargetSpacing = 1 * 60;
         consensus.nTimeSlotLength = 15;
         consensus.strObfuscationPoolDummyAddress = "CQ4fj33mJBaxMWcxjAz9GP8pJ7vZfQRxju";
-	consensus.strDevFeeAddress = "zS44nzYNkZUWfV1TVVgUqJTeHqSjuPjbsi";
+	consensus.strDevFeeAddress = "y5ng4dxYF5E968QFCayE9wRhhbHMaLckcn";
 
         // spork keys
-        consensus.strSporkPubKey = "04e1bac5288740967c2298dd8e6c09cd0b0c46bf9bc7144fbf85ba3e292f969058f69206798de37af746ce60765be4dac607ade03ceea0d019f646f369b89f81b4";
+        consensus.strSporkPubKey = "038a35dace9635bbe96bc753c01493cd465c38bf7da8995612be4115b3a4277b23";
 
         // height based activations
         consensus.height_last_PoW = 200;
